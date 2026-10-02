@@ -9,7 +9,8 @@ class AlphabetComponent extends HTMLElement {
       const item = document.createElement("letter-component");
       item.className = "col";
       item.setAttribute("letter", letter);
-      item.setAttribute("img", `assets/front/letter_${letter.toLowerCase()}.webp`);
+      item.setAttribute("img-front", `assets/front/letter_${letter.toLowerCase()}.webp`);
+      item.setAttribute("img-back", `assets/back/letter_${letter.toLowerCase()}.png`);
       row.appendChild(item);
     });
 
