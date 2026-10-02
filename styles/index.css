@@ -1,0 +1,25 @@
+/* Estilos del Abecedario Interactivo */
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Tarjetas de letras */
+.letter-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 12px;
+}
+
+.letter-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Estilo de las cards de equipo */
+#seccion-equipo .card {
+    transition: transform 0.2s ease;
+}
+
+#seccion-equipo .card:hover {
+    transform: translateY(-2px);
+}
