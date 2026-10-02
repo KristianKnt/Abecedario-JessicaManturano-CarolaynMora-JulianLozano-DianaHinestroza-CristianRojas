@@ -18,7 +18,7 @@ const getRandomColor = () => {
 };
 
 const changeColor = () => {
-  const names = document.querySelectorAll("h5");
+  const names = document.querySelectorAll("h5");// p , div
 
   names.forEach((name) => {
     name.addEventListener("click", () => {
