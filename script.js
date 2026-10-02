@@ -26,12 +26,13 @@ const changeColor = () => {
     });
   });
 };
-
-document.addEventListener("DOMContentLoaded", () => {
-  changeColor();
-});
+// espera a que la pagina se cargue completamente antes de ejecutar la función changeColor
+// document.addEventListener("DOMContentLoaded", () => {
+//   changeColor();
+// });
 // La funcionalidad para registrar letras vistas se implementará más adelante.
 document.addEventListener("DOMContentLoaded", () => {
+    changeColor();
     const cards = document.querySelectorAll(".letter-card");
 
     cards.forEach(card => {
