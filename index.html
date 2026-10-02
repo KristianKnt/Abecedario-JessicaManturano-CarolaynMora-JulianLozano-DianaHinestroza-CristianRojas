@@ -1,366 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abecedario Interactivo</title>
     <!-- Bootstrap CDN existente -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="styles/index.css">
-</head>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
 
-<body class="bg-light min-vh-100 d-flex flex-column">
-
+  <body class="bg-light min-vh-100 d-flex flex-column">
     <!-- RF-01: Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Abecedario Interactivo</a>
-        </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Abecedario Interactivo</a>
+      </div>
     </nav>
 
     <!-- Encabezado / Introducción -->
     <header class="container text-center my-4">
-        <h1 class="fw-bold">Galería de Letras</h1>
-        <p class="text-muted">Explora cada letra del abecedario</p>
+      <h1 class="fw-bold">Galería de Letras</h1>
+      <p class="text-muted">Explora cada letra del abecedario</p>
     </header>
 
     <!-- RF-02: Galería de letras (26 en total organizadas en grid) -->
     <main class="container mb-5 flex-grow-1">
-        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3 justify-content-center"
-            id="galeria-letras">
-            <!-- A -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="A">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_a.webp" alt="Imagen de la letra A" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- B -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="B">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_b.webp" alt="Imagen de la letra B" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- C -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="C">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_c.webp" alt="Imagen de la letra C" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- E -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="E">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_e.webp" alt="Imagen de la letra E" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- F -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="F">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_f.webp" alt="Imagen de la letra F" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- G -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="G">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_g.webp" alt="Imagen de la letra G" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- H -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="H">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_h.webp" alt="Imagen de la letra H" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- I -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="I">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_i.webp" alt="Imagen de la letra I" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- J -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="J">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_j.webp" alt="Imagen de la letra J" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- K -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="K">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_k.webp" alt="Imagen de la letra K" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- L -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="L">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_l.webp" alt="Imagen de la letra L" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- M -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="M">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_m.webp" alt="Imagen de la letra M" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- N -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="N">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_n.webp" alt="Imagen de la letra N" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- ñ
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="Ñ">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <h2 class="card-title display-5 fw-bold mb-1">Ñ</h2>
-                        <p class="card-text text-muted mb-0">ñ</p>
-                    </div>
-                </div>
-            </div> -->
-            <!-- o -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="O">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_o.webp" alt="Imagen de la letra O" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- P -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="P">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_p.webp" alt="Imagen de la letra P" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Q -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="Q">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_q.webp" alt="Imagen de la letra Q" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- R -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="R">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_r.webp" alt="Imagen de la letra R" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- S -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="S">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_s.webp" alt="Imagen de la letra S" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- T -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="T">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_t.webp" alt="Imagen de la letra T" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- U -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="U">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_u.webp" alt="Imagen de la letra U" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- V -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="V">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_v.webp" alt="Imagen de la letra V" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- W -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="W">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_w.webp" alt="Imagen de la letra W" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- X -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="X">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_x.webp" alt="Imagen de la letra X" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Y -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="Y">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_y.webp" alt="Imagen de la letra Y" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>
-            <!-- Z -->
-            <div class="col">
-                <div class="card h-100 text-center shadow-sm letter-card" data-letter="Z">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
-                        <img src="assets/cara/letter_z.webp" alt="Imagen de la letra Z" class="img-fluid mb-2">
-                        <h2 class="card-title display-5 fw-bold mb-1"></h2>
-                        <p class="card-text text-muted mb-0"></p>
-                    </div>
-                </div>
-            </div>          
-        </div>
+      <alphabet-component></alphabet-component>
     </main>
 
     <!-- RF-06: Sección del equipo -->
-    <footer class="bg-white border-top py-5 mt-auto" id="seccion-equipo">
-        <div class="container">
-            <div class="text-center mb-4">
-                <h2 class="h3 fw-bold mb-1">Equipo de Rescate</h2>
-                <p class="text-muted">Integrantes del proyecto</p>
-            </div>
-            <div
-                class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3 text-center justify-content-center">
-                <div class="col">
-                    <div class="card h-100 border shadow-sm p-3 rounded-3">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center p-2">
-                            <span
-                                class="badge bg-primary-subtle text-primary rounded-pill mb-2 px-3 py-1">Integrante</span>
-                            <h5 class="cursor-pointer h6 fw-bold mb-0">Jessica Manturano</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border shadow-sm p-3 rounded-3">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center p-2">
-                            <span
-                                class="badge bg-primary-subtle text-primary rounded-pill mb-2 px-3 py-1">Integrante</span>
-                            <h5 class="cursor-pointer h6 fw-bold mb-0">Carolayn Mora</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border shadow-sm p-3 rounded-3">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center p-2">
-                            <img src="./assets/integrantes/julian_avatar.png" alt="Julian Lozano"
-                                class="rounded-circle mb-2 shadow-sm" width="80" height="80"
-                                style="object-fit: cover;">
-                            <span
-                                class="badge bg-primary-subtle text-primary rounded-pill mb-2 px-3 py-1">Integrante</span>
-                            <h5 class="cursor-pointer h6 fw-bold mb-0">Julian Lozano</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border shadow-sm p-3 rounded-3">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center p-2">
-                            <span
-                                class="badge bg-primary-subtle text-primary rounded-pill mb-2 px-3 py-1">Integrante</span>
-                            <h5 class="cursor-pointer h6 fw-bold mb-0">Diana Hinestroza</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border shadow-sm p-3 rounded-3">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center p-2">
-                            <span
-                                class="badge bg-primary-subtle text-primary rounded-pill mb-2 px-3 py-1">Integrante</span>
-                            <h5 class="cursor-pointer h6 fw-bold mb-0">Cristian Rojas</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer-component></footer-component>
+    
+     <script src="./scripts/letter-component.js" defer></script>
+    <script src="./scripts/alphabet-component.js" defer></script>
+    <script src="./scripts/footer-component.js" defer></script>
 
     <!-- Scripts de Bootstrap existentes -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Lógica de interacción -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
